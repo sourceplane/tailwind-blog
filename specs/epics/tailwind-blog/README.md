@@ -7,7 +7,7 @@ makes a copy of it somebody else's blog in one landing.**
 
 | | |
 |---|---|
-| Status | In progress — TB0 on main |
+| Status | In progress — TB1 on main: the site runs on Workers |
 | Upstream | [timlrx/tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) (MIT), at `b45bef6` (2026-02-08) |
 | Reference | [portfolio-starter-kit](https://github.com/sourceplane/portfolio-starter-kit) — the same scaffolding, tests and bootstrap; [blog-starter](https://github.com/sourceplane/blog-starter) — the same kind of site |
 | Key | `TB` |
