@@ -4,7 +4,7 @@
 |---|---|---|
 | TB0 — the spec | ✅ | the repository's first commit |
 | TB1 — the blog on Workers | ✅ | TB-2 |
-| TB2 — a baseline | planned | TB-3 |
+| TB2 — a baseline | ✅ | TB-3, tagged `baseline-v1` |
 
 ## Departures from the upstream template
 
