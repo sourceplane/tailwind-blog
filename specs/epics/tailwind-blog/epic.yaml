@@ -1,0 +1,30 @@
+# The epic's declaration. metadata.name equals the directory name; metadata.key
+# is the task-key prefix this epic reserves (TB → TB-1, TB-2, …). Owner, target
+# date and health are the platform's — never written here.
+apiVersion: orun.io/v1
+kind: Epic
+metadata:
+  name: tailwind-blog
+  key: TB
+spec:
+  title: "Vercel's Tailwind CSS Starter Blog on Cloudflare Workers"
+  summary: "The Tailwind CSS Starter Blog — Next.js, Tailwind CSS and Contentlayer: Markdown/MDX posts with tags, pagination, authors and projects, RSS feeds, a sitemap and local search — runs on Cloudflare Workers + Static Assets through @opennextjs/cloudflare, inside the Cirrus baseline's repository conventions, and becomes an Orun baseline that takes a new blog from nothing to live on stage and prod in one landing."
+  state: started
+  milestones:
+    - name: "TB0 — the spec"
+      exitCriteria:
+        - "the repository is born with its intent, CI, tooling and spec index, and this doc set and the task contracts are on main"
+      tasks: [TB-1]
+    - name: "TB1 — the blog on Workers"
+      exitCriteria:
+        - "apps/web is the upstream template, built by its own next build and RSS step, then by OpenNext into one Worker with Static Assets"
+        - "`pnpm typecheck`, `pnpm lint`, `pnpm test` and `pnpm build` are green"
+        - "`wrangler dev` serves every page, post, tag, feed, the search index, the sitemap and the newsletter route, under the template's security headers"
+        - "the README says how to run, test, preview and deploy it, and how every Vercel piece maps to Cloudflare"
+      tasks: [TB-2]
+    - name: "TB2 — a baseline"
+      exitCriteria:
+        - "blueprint.yaml (the console card) and repo-blueprint.yaml (the build) take a new blog from nothing to live on stage and prod in one landing, then record it"
+        - "a site built from it carries the site only, renamed throughout to its own name, repository and Worker, with the template's credit intact"
+        - "Baseline CI is green: contract tests, generated component docs, the blueprint read by the pinned orun, the leak gate, the offline bootstrap and the end-to-end tier"
+      tasks: [TB-3]
