@@ -9,7 +9,7 @@ metadata:
 spec:
   title: "Vercel's Tailwind CSS Starter Blog on Cloudflare Workers"
   summary: "The Tailwind CSS Starter Blog — Next.js, Tailwind CSS and Contentlayer: Markdown/MDX posts with tags, pagination, authors and projects, RSS feeds, a sitemap and local search — runs on Cloudflare Workers + Static Assets through @opennextjs/cloudflare, inside the Cirrus baseline's repository conventions, and becomes an Orun baseline that takes a new blog from nothing to live on stage and prod in one landing."
-  state: started
+  state: completed
   milestones:
     - name: "TB0 — the spec"
       exitCriteria:
